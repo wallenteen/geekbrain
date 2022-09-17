@@ -1,0 +1,13 @@
+dotnet new console - create new project
+dotnet run - run project
+    *Via console do response to system terminal
+in VSCode File>Preferences>settings>Commonly Used>Files:Autosave>select: on focus change
+    *if PC too slowly work when save many files- this option should be disable
+Write(); Write one string
+WritrLine(); am end go to new string
+ReadLine(); Read string from terminal
++, -, /, *, %,
+    %-нахождение остатка
+    ()-приоритет действия
+int - целое число
+new Random().Next(min,max) - даст случайное число от мин до мах-1 [min,max-1] or [min,max)
