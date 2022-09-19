@@ -1,13 +1,70 @@
+В C# фигурные скобки должны открываться и закрываться на отдельных строках.
+Для форматирования можно использовать Shift + Alt + F на Windows, или Shift + Option + F на Mac.
+
 dotnet new console - create new project
 dotnet run - run project
     *Via console do response to system terminal
 in VSCode File>Preferences>settings>Commonly Used>Files:Autosave>select: on focus change
     *if PC too slowly work when save many files- this option should be disable
-Write(); Write one string
-WritrLine(); am end go to new string
-ReadLine(); Read string from terminal
+Write(); Вывод в одну строку
+WriteLine(); В конце перейти на новую строку
+ReadLine(); Считать строку из терминала
 +, -, /, *, %,
     %-нахождение остатка
     ()-приоритет действия
-int - целое число
-new Random().Next(min,max) - даст случайное число от мин до мах-1 [min,max-1] or [min,max)
+
+int - целое число, От -2 147 483 648 до 2 147 483 647 32-разрядное целое число со знаком
+double - дробное число, от ±5,0 × 10−324 до ±1,7 × 10308 64-разрядное целое число со знаком
+string от 0 до много символов от 4 байт до 2 гб
+bool true и false 1 байт
+
+Случайности
+new Random().Next(min, max)
+даст случайное целое число от min до max-1
+[min, max-1] или [min, max)
+
+Синтаксис: начало
+if( УСЛОВИЕ )
+{
+ Набор действий 1
+}
+else
+{
+ Набор действий 2
+}
+
+Синтаксис: начало
+while( УСЛОВИЕ ПРОДОЛЖЕНИЯ)
+{
+ Набор действий
+}
+int count = 0;
+while( count < 100)
+{
+ Набор действий
+ count = count + 1
+}
+
+P.S. Чтобы конвертировать строку в число нужно сделать следующее:
+string input = Console.ReadLine();
+int number = int.Parse(input);
+
+Можно парсить и одновременно с чтением входных данных:
+int number = int.Parse(Console.ReadLine());
+==================================
+Функции в програмировании
+f(x) = x2+1
+double f(double x)
+{
+ double result = x * x + 1;
+ return result
+}
+
+МАССИВ
+ТИП ДАННЫХ[] ИМЯ = {Значение1,Значение2, ...}
+int[] array = { 9, 28, 1, 32, 1990 }
+int[] array = { 0, 0, 0, 0, 0 }
+int[] array = new int[5];
+int[] array = new int[]{ 0, 0, 0, 0, 0 }
+int[] array = new int[5]{ 1, 0, 2, 0, 3 }
+
