@@ -4,18 +4,19 @@
 //918 -> 1
 //456 -> 5
 
-//int n = 782;
-//int n = 918;
-//int n = 456;
-Console.WriteLine("Привет, эта прога покажет вторую цифру указанного 3-х значного числа");
-Console.WriteLine("Введите трехзначное число(с другими не работает)");
-string input = Console.ReadLine();
-int n = int.Parse(input);
+Console.WriteLine("Привет, эта прога покажет вторую цифру указанного трехзначного числа");
+Console.WriteLine("Введите трехзначное целое число");
 
-//Можно парсить и одновременно с чтением входных данных:
-//int n = int.Parse(Console.ReadLine());
+int n=int.Parse(Console.ReadLine());
 
-//Console.WriteLine("Это число: " + n);
-int a = n % 100;
-int b = a / 10;
-Console.WriteLine("Это цифра: " + b);
+if (n / 100 == 0 || n / 100 > 9)
+{
+    Console.WriteLine("Введенное число не является трехзначным");
+}
+else
+{
+    int a = n % 100 / 10;
+    Console.WriteLine("Это цифра: " + a);
+}
+
+Console.WriteLine("End");

@@ -1,5 +1,4 @@
-﻿//void метод - тот который ничего не возвращает (Return???)
-int[] array = new int[10];
+﻿int[] array = new int[10];
 void FillArray(int[] collection)//fill-заполнить
 {
     int length = collection.Length;
