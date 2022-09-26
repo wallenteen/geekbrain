@@ -1,19 +1,16 @@
-﻿/*int a = 1234, i=0;
-string str = a.ToString();
-int[] b = new int[str.Length];
-//for( int i=0; i< str.Length; i++)
-while (i < str.Length)
-{
-    b[i] = int.Parse(str[i].ToString());
-} */
-Console.Write("Enter N");
-int a = Console.ReadLine( );
-int i=0;
-string str = n.ToString();
-int[] b = new int[str.Length];
-int length = n.Length;
-Console.WriteLine(length);
-while (i < length)
-{
-    b[i] = int.Parse(str[i].ToString());
-} 
+﻿//Задача 13: Напишите программу, которая выводит третью цифру заданного числа
+//или сообщает, что третьей цифры нет.
+//645 -> 5
+//78 -> третьей цифры нет
+//32679 -> 6
+
+//int n = 645;
+//int n = 78;
+int n = 32679;
+
+if (n < 100) Console.WriteLine("Третьей цифры нет");
+else if (n < 1000) Console.WriteLine(n % 100 % 10);
+else if (9999 < n || n < 100000) Console.WriteLine(n % 1000/100);
+
+//К моему сожалению способ преобразовать число в массив из цифр этого числа я не знаю
+//Также не знаю как сконвертировать string в int
