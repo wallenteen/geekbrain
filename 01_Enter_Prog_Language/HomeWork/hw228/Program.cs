@@ -1,18 +1,15 @@
-﻿//Задача 228: Напишите программу, которая принимает на вход семь чисел, и находит их среднее арифметическое
-//1 2 3 4 5 6 7-> 4
-//10 20 30 40 50 60 70 -> 40
+﻿//int number = int.Parse(Console.ReadLine());
 
-//int[] array = { 1, 2, 3, 4, 5, 6, 7 };
-int[] array = { 10, 20, 30, 40, 50, 60, 70 };
-int length = array.Length;
-int index = 0;
-int sum = 0;
 
-Console.WriteLine("Привет, эта прога найдет среднее арифметическое указанных цифр.");
 
-while (index < length)
+Console.WriteLine("Введите планируемое количество чисел:");
+double count = double.Parse(Console.ReadLine());
+double sum = 0;
+for (double i = 0; i < count; i++)
 {
-    sum = sum + array[index];
-    index++;
+Console.WriteLine($"Введите {i + 1}-ое число:");
+double number = double.Parse(Console.ReadLine());
+sum = sum + number;
 }
-Console.WriteLine("Среднее арифметическое = " + sum / length);
+double average = sum / count;
+Console.WriteLine(average);

@@ -7,15 +7,15 @@
 Console.WriteLine("Привет, эта прога покажет вторую цифру указанного трехзначного числа");
 Console.WriteLine("Введите трехзначное целое число");
 
-int n=int.Parse(Console.ReadLine());
+int num=int.Parse(Console.ReadLine());
 
-if (n / 100 == 0 || n / 100 > 9)
+if (num < 100 || num > 999)
 {
     Console.WriteLine("Введенное число не является трехзначным");
 }
 else
 {
-    int a = n % 100 / 10;
+    int a = num % 100 / 10;
     Console.WriteLine("Это цифра: " + a);
 }
 

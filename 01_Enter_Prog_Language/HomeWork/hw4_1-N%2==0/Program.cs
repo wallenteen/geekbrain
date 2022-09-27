@@ -1,11 +1,10 @@
-﻿//int N=5;
+﻿Console.WriteLine("Введите планируемое число:");
+int N = int.Parse(Console.ReadLine());
 
-int N=8;
-int count=0;
-while(count<=N){
-    if(count%2==0){
-        Console.Write("Четное число: ");
-        Console.WriteLine(count);
+for (int i = 0; i < N; i = i + 2)
+{
+    if (i % 2 == 0)
+    {
+        Console.WriteLine("Четное число: " + i);
     }
-    count++;
 }

@@ -1,25 +1,20 @@
-﻿int[] array = new int[10];
-void FillArray(int[] collection)//fill-заполнить
+﻿
+void FillArray(int[] collection)//метод заполнения числами массива
 {
     int length = collection.Length;
-    int index = 0;
-    while (index < length)
-    {
-        collection[index] = new Random().Next(1, 10); //Создать(new) любое (Random) значение от1-10 (1,10) в массиве(collection) с индексом (index)
-        index++;
-    }
+    for (int index = 0; index < length; index++) collection[index] = new Random().Next(1, 10); //Создать(new) любое (Random) значение от1-10 (1,10) в массиве(collection) с индексом (index)
 }
 
-void PrintArray(int[] col)
+void PrintArray(int[] col)//Метод void который будет печатать массив
 {
     int count = col.Length;
-    int position = 0;
-    while (position < count)
-    {
-        Console.WriteLine(col[position]);
-        position++;
-    }
+    for (int position = 0; position < count; position++) Console.WriteLine(col[position]);
 }
+
+int[] array = new int[10];//Создать новы массив в котором будет 10 элементов
+
+FillArray(array);
+PrintArray(array);
 
 int IndexOf(int[] collection, int find)
 {

@@ -4,21 +4,9 @@
 7 -> да
 1 -> нет
 ------------------------------------*/
-
-int[] array = { 6, 7 };//weekend
-int[] day = { 1, 2, 3, 4, 5 };
-int n = array.Length;
 Console.WriteLine("Enter number of week day");
-int find = int.Parse(Console.ReadLine());
-int index = 0;
-int a = 0, b = 0;
+int day = int.Parse(Console.ReadLine());
 
-while (index < n)
-{
-    if (array[index] == find) a = array[index];
-    else if (day[index] == find) b = day[index];
-    index++;
-}
-if (find == a) Console.WriteLine("Yes this day is weekend " + a);
-if (find == b) Console.WriteLine("No, this day isn't weekend " + b);
-if (find > 7) Console.WriteLine("Incorrect, in week only 7 days");
+if (day == 6 || day == 7) Console.WriteLine("Yes, this day is weekend "+day);
+else if(day>0||day<6) Console.WriteLine("No, this day isn't weekend "+day);
+else Console.WriteLine("Incorrect, in week only 7 days");
