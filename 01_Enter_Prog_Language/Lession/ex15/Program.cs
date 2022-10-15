@@ -96,7 +96,7 @@ void Print(int[] array)//4
 
 int Search(int[] array)//5
 {
-    int size = array.Length
+    int size = array.Length;
     int count = 0;
     for (int i = 0; i < size; i++)
     {

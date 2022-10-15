@@ -25,10 +25,4 @@ for (i = 0; i < Num.Length / 2; i++)
 if (temp == Num.Length / 2) Console.WriteLine("Yes");
 else Console.WriteLine("No");
 
-// string Method()
-// {
-
-// }
-// string res = Method();
-// Console.WriteLine(res);
 

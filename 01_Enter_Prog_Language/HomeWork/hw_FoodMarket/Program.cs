@@ -1,12 +1,11 @@
 ﻿int[] array = new int[24];
 int MaxNumber = array[0];
 int MaxIndex = 0;
-Console.WriteLine("Введите количество посетителей:");
-int visit = 100;//int.Parse(Console.ReadLine());
+Console.WriteLine("Введите количество посетителей (например 100):");
+int visit = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Введите количество входов:");
 int count = int.Parse(Console.ReadLine());
-
 
 for (int i = 0; i < count; i++)
 {
@@ -32,9 +31,6 @@ for (int i = 1; i < array.Length; i++)
         MaxNumber = array[i];
         MaxIndex = i;
     }
-
 }
 
-Console.WriteLine($"Максимальное число посетителей было в {MaxIndex} - {MaxIndex+1} часов");
-
-
+Console.WriteLine($"Максимальное число посетителей было в {MaxIndex} - {MaxIndex + 1} часов");
