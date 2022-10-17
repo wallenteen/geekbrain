@@ -1,17 +1,20 @@
-//Заполнить массив с клавы
+// Заполнить массив случайными числами
+collection[index] = new Random().Next(1, 10);
+
+// Заполнить массив с клавы
 double[] dotA = new double[count];
 for (int i = 0; i < dotA.Length; i++) dotA[i] = int.Parse(Console.ReadLine());
 
-//Квадратны корень числа
+// Квадратны корень числа
 double d = Math.Sqrt(14.5);
 
-//метод возведения в степень.
+// метод возведения в степень.
 (a-b) * (a-b) можно записать, как Math.Pow((a-b), 2), где 2 - это степень.
 
-//округленbt до двух цифр после запятой. 
+// округленbt до двух цифр после запятой. 
 Math.Round(value, count), где count – количество значащих цифр после запятой. 
 
-//Двумерные массивы
+// Двумерные массивы
 int[,] matrix=new int[5,8]; //5-строкиб 8-столбцы
 matrix[0, 1] = 8;
 for (int p = 0; p < matrix.GetLength(0); p++)//matrix.GetLength(01) вызывает длину 0-строк, 1-столбцов
@@ -20,7 +23,7 @@ for (int p = 0; p < matrix.GetLength(0); p++)//matrix.GetLength(01) вызыва
     Console.WriteLine();
 }
 
-//Метод вызывает сам себя(Рекурсия)
+// Метод вызывает сам себя(Рекурсия)
 void Fill(int row, int col)
 {
     if (pic[row, col] == 0)
@@ -28,3 +31,14 @@ void Fill(int row, int col)
         Fill(row, col + 1);
     }
 }
+
+//String.Join - упрощение вывода на экран массива без пробела в конце
+return "[" + String.Join(", ", array) + "]";
+это тоже если:
+string result="[";
+for(int i=0; i<array.Length; i++){
+    if(i<array.Length-1) result=result+array[i]+", ";
+    else result=result+array[i];
+}
+return result+"]";
+
