@@ -28,9 +28,8 @@ double Find(double[] array)
         if (array[i] < minNumber) minNumber = array[i];
         else if (array[i] > maxNumber) maxNumber = array[i];
     }
+    
     double sum = maxNumber - minNumber;
-    return minNumber;
-    return maxNumber;
     return sum;
 }
 
