@@ -42,3 +42,8 @@ for(int i=0; i<array.Length; i++){
 }
 return result+"]";
 
+// Смотреть время выполнения скрипта
+DateTime dts=DateTime.Now();
+скрипт
+DateTime dte=DateTime.Now();
+Console.WriteLine((dte-dts).TotalMilliseconds);
